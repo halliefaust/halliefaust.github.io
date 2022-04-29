@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+	font-family: Lato, "Open Sans", sans-serif;
+	color: #00100B;
+}
+
+#navbar {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 400px;
+	display: flex;
+}
+#nav a {
+	text-decoration: none;
+	color: #00100B;
+	width: 100px;
+	display: block;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#nav a:hover {
+	color: #736CED;
+}
+#nav ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#nav li {
+	width: 100px;
+	text-align: center;
+	color: #00100B;
+	background-color: #FFF;
+}
+#nav > ul {
+	display: inline-flex;
+	align-items: flex-start;
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="ITP 104 Final Project Draft">
+	<meta name="description" content="This project is a personal portfolio. It's a single-page site, so I just have four sections (home, about, projects, and contact). Home: Introduces name and displays avatar, includes an arrow indicating that users should scroll (or click the arrow). About: Includes a short bio about my interests. Passions: This section contains some of my projects/extracurriculars/intersts. Contact: This section includes info on how to get in touch with me, including my email and linkedin.">
+
+	<title>Hallie Faust Portfolio</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+
+	<style type="text/css">
+		#home {
+			position: relative;
+			height: 100vh;
+		}
+		#home-writing {
+			position: absolute;
+			top: 250px;
+			left: 300px;
+			font-size: 80px;
+		}
+		#home-avatar {
+			position: absolute;
+			width: 500px;
+			height: auto;
+			right: 100px;
+			top: 100px;
+			float: left;
+		}
+		#home-avatar img {
+			width: 300px;
+			height: auto;
+		}
+		.arrow {
+			position: absolute;
+			bottom: 0px;
+			left: 670px;
+		}
+		.arrow img {
+			width: 35px;
+			height: auto;
+		}
+		#about {
+			height: 100vh;
+			background-color: #736CED;
+			color: white;
+			display: flex;
+		}
+		#div1 {
+			width: 400px;
+			height: 500px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: auto;
+			margin-bottom: auto;
+			overflow: hidden;
+			border-radius: 30px;
+			border: 3px solid #fff;
+		}
+		#div1 img {
+			width: 100%;
+			height: auto;
+		}
+		#div2 {
+			width: 500px;
+			height: 200px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+		.about-link {
+			text-decoration: none;
+			color: #d2d0f5;
+		}
+		.about-link:hover {
+			text-decoration: none;
+			color: #fff;
+		}
+
+		#projects, #projects2 {
+			height: 100vh;
+			display: flex;
+		}
+		#projects2 {
+			background-color: #7982DE;
+		}
+		#projects .el {
+			width: 350px;
+			height: 600px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: auto;
+			margin-bottom: auto;
+			background-color: #7982DE;
+			color: white;
+			justify-content: center;
+			border-radius: 30px;
+			border: 3px solid #7982DE;
+		}
+		#projects2 .el {
+			border: 3px solid #fff;
+			width: 350px;
+			height: 600px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: auto;
+			margin-bottom: auto;
+			background-color: #fff;
+			color: #7982DE;
+			justify-content: center;
+			border-radius: 30px;
+		}
+		/* figure out how to get this to show, but also leave an invisible border when not hovering so that the flexbox doesn't move */
+		#project1 .el:hover, #project2 .el:hover {
+			border: 3px solid #00100B;
+		}
+		#projects h3, #projects2 h3 {
+			text-align: center;
+		}
+		#projects img, #projects2 img {
+			width: 300px;
+			height: auto;
+		}
+		.crocs {
+			width: 300px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.words {
+			margin-right: auto;
+			margin-left: auto;
+			width: 300px;
+			height: 200px;
+			text-align: center;
+		}
+
+		#contact {
+			height: 100vh;
+			position: relative;
+		}
+		#contact-writing {
+			position: absolute;
+			top: 170px;
+			right: 200px;
+			width: 400px;
+		}
+		#contact-writing a {
+			text-decoration: none;
+			color: #736CED;
+		}
+		#contact-writing img {
+			width: 30px;
+			transform: scale(1.0);
+			transition: all 0.2s 0s;
+		}
+		#contact-writing img:hover {
+			transform: scale(1.2);
+		}
+		#contact-avatar {
+			position: absolute;
+			width: 500px;
+			height: auto;
+			left: 150px;
+			top: 100px;
+			float: left;
+		}
+		#contact-avatar img {
+			width: 500px;
+			height: auto;
+		}
+		.footer {
+			position: absolute;
+			bottom: 30px;
+			left: 660px;
+		}
+		.footer a {
+			padding-bottom: 30px;
+			text-decoration: none;
+			color: #00100B;
+		}
+		.footer a:hover {
+			color: #736CED;
+		}
+	</style>
+</head>
+<body>
+	<div id="home">
+		<div id="navbar">
+			<div id="nav">
+				<ul>
+					<li>
+						<a href="#home">home</a>
+					</li>
+					<li>
+						<a href="#about">about</a>
+					</li>
+					<li>
+						<a href="#projects">passions</a>
+					</li>
+					<li>
+						<a href="#contact">contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="home-writing">
+			Hello!
+			<br>
+			I'm Hallie.
+		</div>
+		<div id="home-avatar">
+			<img src="img/human.png" alt="Personal avatar">
+		</div>
+		<div class="arrow">
+			<a href="#about">
+				<img src="img/arrow.png" alt="Down arrow">
+			</a>
+		</div>
+	</div>
+	<div id="about">
+		<div id="div1">
+			<img src="img/me.jpg" alt="Picture of me">
+		</div>
+		<div id="div2">
+			<h2>About</h2>
+			<p>Hey! 👋 Thanks for stopping by! I'm currently a freshman at USC going into the Computer Science and Business Administration program. When not in class, you can find me copy editing ✏️ in the Daily Trojan newsroom, playing field hockey 🏑 on the Village Turf, or hanging out on the quad with friends ☀️. I also love baking sweet treats 🍰, watching cheesy movies 🎥, and coding 💻. I built this site from head to body (haha), so feel free to explore and learn some more!</p>
+			<p><a class="about-link" href="resume.html" target="_blank">View my resume →</a></p>
+		</div>
+	</div>
+	<div id="projects">
+		<div class="el">
+			<h3>Journalism</h3>
+			<div class="crocs">
+				<img src="img/journ.jpg" alt="Journalism bio">
+			</div>
+			<div class="words">
+				<p>From jugglers to basketball players, I love covering stories and editing articles. I've been involved with journalism since I joined my first publication in my sophomore year of highschool, and I continue to be involved by editing for the Daily Trojan here at USC. I can't wait to see what stories come next!</p>
+				<p><a class="about-link" href="https://palyvoice.com/staff_name/hallie-faust/" target="_blank">See more →</a></p>
+			</div>
+		</div>
+		<div class="el">
+			<h3>CHLA Design-a-Thon</h3>
+			<div class="crocs">
+				<img src="img/proj1.jpg" alt="Design-a-Thon Presentation">
+			</div>
+			<div class="words">
+				<p>In March of 2022, I had the opportunity to take part in a design-a-thon for CHLA. We tackled food insecurity in the LA area, addressing the gap between identifying families in need and connecting them with adequate resources. My team's solution, tumme, is a platform designed to enable families to take control of what they eat. Families can input dietary restrictions or cultural preferences into the system and receive info on the availability of their preferred foods nearby. Our product simultaneously helps food banks reduce food waste, as we would be taking inventory.</p>
+				<p><a class="about-link" href="pres.html" target="_blank">See more →</a></p>
+			</div>
+		</div>
+		<div class="el">
+			<h3>Architecture</h3>
+			<div class="crocs">
+				<img src="img/arch.jpg" alt="Page from architecture portfolio">
+			</div>
+			<div class="words">
+				<p>After taking two architecture courses at USC, I've discovered my love for analyzing buildings. Each is so much more complex than it looks, and the closer we examine these structures, the more we discover about the thought processes behind them. I previously thought that what made a building great in my eyes was a perfectly symmetrical façade and ordered layout. Studying architecture has given me a new perspective on the buildings around me, enabling me to find beauty and order in even the most peculiar buildings.</p>
+			</div>
+		</div>
+	</div>
+	<div id="projects2">
+		<div class="el">
+			<h3>Baking</h3>
+			<div class="crocs">
+				<img src="img/baking.jpg" alt="Tart crust">
+			</div>
+			<div class="words">
+				<p>In my free time, I'm an avid baker. I love trying out new recipes, though I tend to lean towards cakes and french pastries. One of my favorite family traditions is making pumpkin pies every Thanksgiving. One year, we even grew our own pumpkins all year so that we could use them in the pie! (Honestly, I wouldn't recommend because it doesn't taste much different, but it's fun to try once).</p>
+			</div>
+		</div>
+		<div class="el">
+			<h3>Photography</h3>
+			<div class="crocs">
+				<img src="img/photo.jpg" alt="Vizcaya">
+			</div>
+			<div class="words">
+				<p>Taking pictures is a great way to document my hobbies, so I've made a habit of snapping pics of things I bake or pretty buildings I see. The picture above is from the Vizcaya Museum in Miami, FL. Although I'm nowhere near a professional photographer, I find it fun to embrace this interest anyways.</p>
+			</div>
+		</div>
+		<div class="el">
+			<h3>Coding</h3>
+			<div class="crocs">
+				<img id="snake" src="img/python.png" alt="Python logo">
+			</div>
+			<div class="words">
+				<p>I love growing my coding skills by taking on new projects! The ITP courses at USC have given me an intro to Python, HTML, and CSS, and they have also inspired me to pursue the Computer Science and Business Administration major. I'm excited to see all the projects that I get to work on in the future!</p>
+				<!-- <p><a class="about-link" href="pres.html" target="_blank">See more →</a></p> [[add the correct link here once I figure out the github link situation]] -->
+			</div>
+		</div>
+	</div>
+	<div id="contact">
+		<div id="contact-writing">
+			<h2>Let's chat!</h2>
+			<p>Feel free to reach out if you'd like to chat! You can contact me by email (<a href="mailto:hfaust@usc.edu">hfaust@usc.edu</a>) or check out my LinkedIn below.</p>
+			<a href="https://linkedin.com/in/halliefaust" target="_blank">
+				<img src="img/linkedin.png" alt="LinkedIn logo">
+			</a>
+		</div>
+		<div id="contact-avatar">
+			<img src="img/connect.png" alt="Personal avatar">
+		</div>
+		<div class="footer">
+			<a href="#home">return to top</a>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+
+	<script src="jquery-smooth-scrolling-master/jquery.smoothscroll.js"></script>
+
+	<script>
+		$('html').smoothScroll();
+	</script>
+
+</body>
+</html>
